@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 40%;
+            width: 30%;
+        } 
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgn10gPpo9EhkyHmd07WNR8HHLdngwWWVyw&s" height="50%" width="80%" alt=""><br><br>
+    <button>HTML</button>
+    <button>CSS</button>
+    <button>JS</button>
+   
+    <script>
+    var a = document.querySelectorAll("button")[0];
+    a.addEventListener("mouseover",html);
+    var b = document.querySelector("img");
+    function html(){
+        b.src ="https://global.discourse-cdn.com/sitepoint/original/3X/9/5/953202704a7947b1edad637b9e5925144c9f83f7.jpeg";
+    }
+    var c = document.querySelectorAll("button")[1];
+    c.addEventListener("mouseover",css);
+    function css(){
+        b.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvA00GaUwlwEKhXxDgarATH7yRlRh3utSexQ&s";
+    }
+    var d= document.querySelectorAll("button")[2];
+    d.addEventListener("mouseover",js);
+    function js(){
+        b.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZq_FDxj8jleGCeDXaWUdeuD1XGtvc2wG0Vg&s";
+    }
+    
+    
+    </script>
+</body>
+</html>
